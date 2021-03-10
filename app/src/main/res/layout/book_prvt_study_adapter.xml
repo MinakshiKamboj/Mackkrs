@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_centerVertical="true"
+        >
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkbox_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textColorHint="@color/app_clr"
+                android:outlineSpotShadowColor="@color/app_clr"
+                android:outlineAmbientShadowColor="@color/app_clr"
+                android:shadowColor="@color/app_clr"
+                android:textColorLink="@color/app_clr"
+                android:textColorHighlight="@color/app_clr"
+                android:text="WK320 - Parent Visas"/>
+            <TextView
+                android:id="@+id/txt_act"
+                android:layout_below="@+id/checkbox_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/app_clr"
+                android:textSize="12dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/lr_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_point_no"
+                    android:layout_below="@+id/checkbox_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="1"
+                    android:textColor="@color/app_clr"
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:id="@+id/txt_po"
+                    android:layout_below="@+id/checkbox_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Points"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    />
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_below="@+id/checkbox_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="- 04:30 PM"
+                    android:textColor="@color/app_clr"
+                    android:textSize="12dp"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/linear"
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/grayfull_backg_cir"
+                android:text="  $35  "/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

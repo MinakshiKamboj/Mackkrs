@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.FeedbackActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linear_"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/gray1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_icon"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                app:tint="@color/app_clr" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private Study"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:text="you can download the paers for your reference"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_below="@+id/linear_"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Please type your feedback below"/>
+
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_below="@+id/txt"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/grayfull_backg"
+                    android:layout_height="200dp">
+
+                    <EditText
+                        android:id="@+id/edt_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/gray2"
+                        android:layout_marginTop="10dp"
+                        android:hint="Write your feedback here...."/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_below="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_submit"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:text="Submit Feedback"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="10dp"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

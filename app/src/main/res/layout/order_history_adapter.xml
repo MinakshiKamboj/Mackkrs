@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/right_icon"/>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_toRightOf="@+id/img_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:text="Face-to-Face CPD Workshops"/>
+
+    <TextView
+        android:id="@+id/txt_invoice_name"
+        android:layout_toRightOf="@+id/img_right"
+        android:layout_below="@+id/txt_name"
+        android:layout_width="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Invoice Number :"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp"
+        android:textColor="@color/app_clr"/>
+
+    <TextView
+        android:id="@+id/txt_invoice_name1"
+        android:layout_toRightOf="@+id/txt_invoice_name"
+        android:layout_below="@+id/txt_name"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="1725"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_toRightOf="@+id/img_right"
+        android:layout_below="@+id/txt_invoice_name"
+        android:layout_width="130dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="Order Date :"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp"
+        android:textColor="@color/app_clr"/>
+
+    <TextView
+        android:id="@+id/txt_date1"
+        android:layout_toRightOf="@+id/txt_date"
+        android:layout_below="@+id/txt_invoice_name"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="01-12-2020"
+        android:textColor="@color/gray"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp" />
+
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_toRightOf="@+id/img_right"
+        android:layout_below="@+id/txt_date"
+        android:layout_width="130dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="Price :"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp"
+        android:textColor="@color/app_clr"/>
+
+    <TextView
+        android:id="@+id/txt_price1"
+        android:layout_toRightOf="@+id/txt_price"
+        android:layout_below="@+id/txt_date1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="$1000"
+        android:textColor="@color/gray"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="10dp" />
+
+    <View
+        android:layout_below="@+id/txt_price1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/gray1"/>
+
+</RelativeLayout>
